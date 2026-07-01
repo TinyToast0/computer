@@ -1,0 +1,18 @@
+@theme "/home/toast/.config/rofi/mainTheme.rasi"
+
+configuration {
+    monitor: "DP-1";
+  }
+
+window {
+  width: 150px;
+  height: 120px;
+}
+
+#textbox-prompt-colon {
+  enabled: false;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}

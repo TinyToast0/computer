@@ -1,0 +1,1 @@
+const barMinHeight = 10

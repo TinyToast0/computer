@@ -1,0 +1,16 @@
+configuration {
+  kb-row-up: "Control+k";
+  kb-row-down: "Control+j,Tab";
+  kb-accept-entry: "control+l,Alt_L,Return";
+  kb-element-next: "";
+  kb-remove-to-eol: "";
+  kb-mode-complete: "";
+
+  display-drun: "What today Boss?";
+  display-window: "Windows";
+  drun-display-format: "{icon} {name}";
+  modi: "window,run,drun";
+  show-icons: true;
+}
+
+@theme "/home/toast/.config/rofi/mainTheme.rasi"

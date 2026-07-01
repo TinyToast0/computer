@@ -1,0 +1,46 @@
+// -*- mode: jsonc -*-
+{
+  "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 5, // Waybar height (to be removed for auto height)
+  "spacing": 0, // Gaps between modules (4px)
+  "include": [
+    "~/.config/waybar/modules.jsonc",
+    "~/.config/waybar/custom_modules/extras/dividers.jsonc",
+    "~/.config/waybar/custom_modules/extras/distro.jsonc",
+  ],
+  "modules-left": [
+    "pulseaudio",
+    "custom/right_div#2",
+    "custom/right_inv#2",
+    "mpris",
+    "custom/right_div#2",
+  ],
+  "modules-center": [
+    "custom/left_div#4",
+    "hyprland/workspaces",
+    "custom/left_inv#3",
+    "custom/left_div#5",
+    "custom/left_inv#4",
+    "custom/left_div#1",
+    "custom/distro",
+    "custom/right_div#1",
+    "custom/right_inv#5",
+    "custom/right_div#5",
+    "custom/right_inv#3",
+    "clock#time",
+    "custom/right_div#4",
+    "custom/right_inv#3",
+    "clock#date",
+    "custom/right_div#4",
+  ],
+  "modules-right": [
+    "custom/left_div#3",
+    "temperature",
+    "custom/left_inv#2",
+    "custom/left_div#3",
+    "cpu",
+    "custom/left_inv#2",
+    "custom/left_div#3",
+    "tray",
+  ],
+}
