@@ -12,6 +12,7 @@ alias ffmp4="~/.config/bash/scripts/ffmpeg_mp4_png.sh"
 alias myGit="git clone https://github.com/TinyToast0/computer"
 alias Script="cd ~/.config/dev/"
 alias bScript="cd ~/.config/dev/bash/scripts/"
+alias gitignore="nvim /home/toast/.config/.gitignore"
 
 # Created by `pipx` on 2026-06-04 13:41:09
 set PATH $PATH /home/toast/.local/bin
