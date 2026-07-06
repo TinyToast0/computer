@@ -11,6 +11,10 @@ vim.keymap.set("i", "fj", "<Esc>", { noremap = true, silent = true, nowait = tru
 vim.keymap.set("i", "FJ", "<Esc>", { noremap = true, silent = true, nowait = true })
 vim.keymap.set("i", "jf", "<Esc>", { noremap = true, silent = true, nowait = true })
 vim.keymap.set("i", "JF", "<Esc>", { noremap = true, silent = true, nowait = true })
+vim.keymap.set("n", "n", "j")
+vim.keymap.set("n", "e", "k")
+vim.keymap.set("v", "n", "j")
+vim.keymap.set("v", "e", "k")
 
 vim.keymap.set("n", "<leader>D", function()
   Snacks.dashboard()

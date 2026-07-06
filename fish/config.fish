@@ -8,11 +8,12 @@ alias nas="n ~/.config/fish/config.fish"
 alias pacs="sudo pacman -S"
 alias pacr="sudo pacman -R"
 alias pacu="sudo pacman -Syu"
-alias ffmp4="~/.config/bash/scripts/ffmpeg_mp4_png.sh"
+alias ffmp4="~/.config/dev/bash/scripts/ffmpeg_mp4_png.sh"
 alias myGit="git clone https://github.com/TinyToast0/computer"
 alias Script="cd ~/.config/dev/"
 alias bScript="cd ~/.config/dev/bash/scripts/"
 alias gitignore="nvim /home/toast/.config/.gitignore"
+alias makeScript="/home/toast/.config/dev/bash/scripts/scriptmaker.sh"
 
 # Created by `pipx` on 2026-06-04 13:41:09
 set PATH $PATH /home/toast/.local/bin

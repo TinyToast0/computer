@@ -4,6 +4,10 @@ Vencord/settings
 dconf
 discord
 gh
+gtk-4.0
+gtk-3.0
+nwg-look
+xsettingsd
 go
 htop
 hyprland-mimeapps.list
