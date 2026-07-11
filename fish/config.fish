@@ -14,6 +14,7 @@ alias Script="cd ~/.config/dev/"
 alias bScript="cd ~/.config/dev/bash/scripts/"
 alias gitignore="nvim /home/toast/.config/.gitignore"
 alias makeScript="/home/toast/.config/dev/bash/scripts/scriptmaker.sh"
+alias lg="lazygit"
 
 # Created by `pipx` on 2026-06-04 13:41:09
 set PATH $PATH /home/toast/.local/bin

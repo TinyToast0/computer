@@ -3,6 +3,7 @@ local switcher = "/home/toast/.config/dev/bash/scripts/themeSwitcher.sh"
 
 local mainMod = "SUPER"
 
+-- Universal keybinds
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal .. " fish"), { submap_universal = true })
 hl.bind(mainMod .. " + C", hl.dsp.window.close(), { submap_universal = true })
 hl.bind(mainMod .. " + END", hl.dsp.exec_cmd("./.config/rofi/scripts/rofiPowerMenu.sh"), { submap_universal = true })
@@ -13,14 +14,65 @@ hl.bind(
 )
 
 --NOTE: Colemak Submap
-hl.bind(mainMod .. " + M", hl.dsp.submap("colemak"), { submap_universal = true })
+hl.bind(mainMod .. " + SHIFT + C", hl.dsp.submap("colemak"))
+hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("echo '' | notify 'Mode set to Colemak' "))
 hl.define_submap("colemak", function()
 	--basic Keybinds
-	hl.bind(mainMod .. "+ w", hl.dsp.exec_cmd("rofi -show drun -theme-str 'window {width: 25%;}' -monitor DP-1"))
+	hl.bind(mainMod .. "+ W", hl.dsp.exec_cmd("rofi -show drun -theme-str 'window {width: 25%;}' -monitor DP-1"))
 
 	--Toggle opacity
 	hl.window_rule({ match = { tag = "opacity1" }, opacity = "1.0 override" })
 	hl.bind("SUPER + Y", hl.dsp.window.tag({ tag = "opacity1" }))
+
+	-- Switch to regular
+	hl.bind(mainMod .. " + B", hl.dsp.submap("regular"))
+	hl.bind(mainMod .. " + B", function()
+		hl.config({
+			input = {
+				kb_layout = "gb",
+				kb_variant = "",
+				kb_model = "",
+				kb_options = "",
+				kb_rules = "",
+
+				follow_mouse = 1,
+
+				sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
+
+				touchpad = {
+					natural_scroll = false,
+				},
+			},
+		})
+	end)
+
+	--Dark Mode
+	hl.bind(mainMod .. " + SHIFT + D", hl.dsp.dpms())
+
+	--Toggle Private
+	hl.bind(mainMod .. " + U", function()
+		local w = hl.get_active_window()
+		if not w then
+			return
+		end
+		local wt = w.tags
+		local function hasPrivate(tags)
+			for _, t in ipairs(tags) do
+				if t == "private" then
+					return true
+				end
+			end
+			return false
+		end
+
+		if hasPrivate(wt) then
+			hl.dispatch(hl.dsp.window.tag({ tag = "-private" }))
+			hl.dispatch(hl.dsp.window.set_prop({ prop = "no_screen_share", value = "off" }))
+		else
+			hl.dispatch(hl.dsp.window.tag({ tag = "+private" }))
+			hl.dispatch(hl.dsp.window.set_prop({ prop = "no_screen_share", value = "on" }))
+		end
+	end)
 
 	--Window moving
 	hl.bind(mainMod .. "+ SHIFT + i", hl.dsp.window.move({ direction = "right" }))
@@ -40,7 +92,7 @@ hl.define_submap("colemak", function()
 		hl.dsp.window.resize({ x = -20, y = 0, relative = true }),
 		{ repeating = true }
 	)
-	hl.bind(mainMod .. " + CONTROL + O", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating = true })
+	hl.bind(mainMod .. " + CONTROL + i", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating = true })
 	hl.bind(
 		mainMod .. " + CONTROL + N",
 		hl.dsp.window.resize({ x = 0, y = -20, relative = true }),
@@ -88,13 +140,46 @@ end)
 
 --NOTE: Escape submap
 hl.bind(mainMod .. " + escape", hl.dsp.submap("escape"), { submap_universal = true })
+hl.bind(
+	mainMod .. " + escape",
+	hl.dsp.exec_cmd("echo '' | notify 'WARNING: Emergancy mode active.' "),
+	{ submap_universal = true }
+)
 hl.define_submap("escape", function()
-	hl.bind(mainMod .. " + SHIFT + F1", hl.dsp.exec_cmd(terminal))
+	hl.bind(mainMod .. " + SHIFT + R", hl.dsp.submap("regular"))
+	hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("echo '' | notify 'Mode set to Regular.'"))
+	hl.bind(mainMod .. " + SHIFT + C", hl.dsp.submap("colemak"))
+	hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("echo '' | notify 'Mode set to Colemak.'"))
+	hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
+	hl.bind(mainMod .. "+ W", hl.dsp.exec_cmd("rofi -show drun -theme-str 'window {width: 25%;}' -monitor DP-1"))
+	hl.bind(mainMod .. "+ M", hl.dsp.exec_cmd("/home/toast/.config/rofi/scripts/modeSelect.sh"))
 end)
 
 --NOTE: Regular submap
-hl.bind(mainMod .. " + CONTROL + SHIFT + 1", hl.dsp.submap("regular"), { submap_universal = true })
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.submap("regular"))
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("echo '' | notify 'Mode set to Regular' "))
 hl.define_submap("regular", function()
+	-- Switch to Colemak
+	hl.bind(mainMod .. " + B", hl.dsp.submap("colemak"))
+	hl.bind(mainMod .. " + B", function()
+		hl.config({
+			input = {
+				kb_layout = "gb",
+				kb_variant = "colemak",
+				kb_model = "",
+				kb_options = "caps:swap:backspace",
+				kb_rules = "",
+
+				follow_mouse = 1,
+
+				sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
+
+				touchpad = {
+					natural_scroll = false,
+				},
+			},
+		})
+	end)
 	hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 	hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("rofi -show drun -theme-str 'window {width: 25%;}' -monitor DP-1"))
 	hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))

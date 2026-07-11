@@ -1,3 +1,12 @@
+--Dark Mode
+hl.window_rule({
+	name = "darkMode-opacity",
+	match = {
+		class = "darkMode",
+	},
+	opacity = "1.0 override 1.0 override 1.0 override",
+})
+
 --Floating terminal command
 hl.window_rule({
 	name = "floating_terminal",
