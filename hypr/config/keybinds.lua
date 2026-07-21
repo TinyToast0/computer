@@ -46,8 +46,15 @@ hl.define_submap("colemak", function()
 		})
 	end)
 
+	--Hints
+	hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("hints"))
+
+	--Move windows with mouse
+	hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
+
 	--Dark Mode
-	hl.bind(mainMod .. " + SHIFT + D", hl.dsp.dpms())
+	hl.bind(mainMod .. " + L", hl.dsp.dpms({ action = "toggle", monitor = "DP-1" }))
+	hl.bind(mainMod .. " + SHIFT + L", hl.dsp.dpms({ action = "toggle", monitor = "DP-2" }))
 
 	--Toggle Private
 	hl.bind(mainMod .. " + U", function()
