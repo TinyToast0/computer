@@ -13,6 +13,12 @@ odin)
   touch $NAME
   echo "package main" >>$NAME
   ;;
+py | python)
+  touch $NAME
+  echo "#!/usr/bin/env/ python3
+
+print('Hello World')" >>$NAME
+  ;;
 *)
   echo "Invalid bitch"
   exit 1

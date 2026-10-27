@@ -1,9 +1,9 @@
 hl.config({
 	input = {
-		kb_layout = "gb",
-		kb_variant = "colemak",
+		kb_layout = "",
+		kb_variant = "",
 		kb_model = "",
-		kb_options = "caps:swap:backspace",
+		kb_options = "",
 		kb_rules = "",
 
 		follow_mouse = 1,

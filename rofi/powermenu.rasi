@@ -1,9 +1,5 @@
 @theme "/home/toast/.config/rofi/mainTheme.rasi"
 
-configuration {
-    monitor: "DP-1";
-  }
-
 window {
   width: 150px;
   height: 120px;

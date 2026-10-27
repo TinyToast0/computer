@@ -34,6 +34,14 @@ hl.window_rule({
 	workspace = "special:music",
 })
 
+hl.window_rule({
+	name = "discord-move",
+	match = {
+		class = "discord",
+	},
+	workspace = "special:discord",
+})
+
 --Toggle opacity
 hl.window_rule({ match = { tag = "opacity1" }, opacity = "1.0 override" })
 hl.bind("SUPER + I", hl.dsp.window.tag({ tag = "opacity1" }))

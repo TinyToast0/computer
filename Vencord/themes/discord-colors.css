@@ -8,118 +8,118 @@
 
 * {
     /* *.background */
-    --background-primary: #0d151e;
-    --background-secondary: #4A5767;
-    --background-tertiary: #0d151e;
+    --background-primary: #0e1721;
+    --background-secondary: #324458;
+    --background-tertiary: #0e1721;
 
-    --background-primary-alt: #0d151e;
-    --background-secondary-alt: #0d151e;
-    --background-tertiary-alt: #0d151e;
+    --background-primary-alt: #0e1721;
+    --background-secondary-alt: #0e1721;
+    --background-tertiary-alt: #0e1721;
 
-    --channeltextarea-background: #0d151e;
-    --custom-channel-members-bg: #0d151e;
+    --channeltextarea-background: #0e1721;
+    --custom-channel-members-bg: #0e1721;
 
-    --profile-gradient-primary-color: #0d151e;
-    --profile-gradient-secondary-color: #0d151e;
+    --profile-gradient-primary-color: #0e1721;
+    --profile-gradient-secondary-color: #0e1721;
 
-    --__header-bar-background: #0d151e !important;
+    --__header-bar-background: #0e1721 !important;
 
     /* Discord newer tokens */
-    --bg-base-tertiary: #0d151e;
-    --background-base-lowest: #0d151e;
-    --background-base-low: #0d151e;
-    --background-base-lower: #0d151e;
+    --bg-base-tertiary: #0e1721;
+    --background-base-lowest: #0e1721;
+    --background-base-low: #0e1721;
+    --background-base-lower: #0e1721;
 
-    --background-surface-high: #0d151e;
-    --background-surface-higher: #0d151e;
-    --background-surface-highest: #0d151e;
+    --background-surface-high: #0e1721;
+    --background-surface-higher: #0e1721;
+    --background-surface-highest: #0e1721;
 
-    --chat-background-default: #0d151e;
+    --chat-background-default: #0e1721;
 
     /* inputs / floating */
-    --card-primary-bg: #0d151e;
-    --input-background: #0d151e;
-    --autocomplete-bg: #0d151e;
-    --background-nested-floating: #0d151e;
-    --background-floating: #0d151e;
+    --card-primary-bg: #0e1721;
+    --input-background: #0e1721;
+    --autocomplete-bg: #0e1721;
+    --background-nested-floating: #0e1721;
+    --background-floating: #0e1721;
 
-    --scrollbar-auto-track: #0d151e;
-    --scrollbar-thin-track: #0d151e;
+    --scrollbar-auto-track: #0e1721;
+    --scrollbar-thin-track: #0e1721;
 
     /* subtle interactions (keep VERY light contrast so UI is usable) */
-    --background-message-hover: color-mix(in srgb, #0d151e, white 5%);
-    --button-secondary-background-hover: color-mix(in srgb, #0d151e, white 8%);
-    --button-secondary-background-active: color-mix(in srgb, #0d151e, white 10%);
+    --background-message-hover: color-mix(in srgb, #0e1721, white 5%);
+    --button-secondary-background-hover: color-mix(in srgb, #0e1721, white 8%);
+    --button-secondary-background-active: color-mix(in srgb, #0e1721, white 10%);
 
     /* borders */
-    --border-subtle: #0d151e;
-    --border-normal: #535961;
+    --border-subtle: #0e1721;
+    --border-normal: #395067;
 
     /* primary.* */
-    --primary-630: #0d151e;
+    --primary-630: #0e1721;
 
     /* *.color2 - secondary elements */
-    --scrollbar-auto-thumb: #535961;
-    --scrollbar-thin-thumb: #535961;
-    --interactive-muted: #535961;
-    --text-muted: #535961;
+    --scrollbar-auto-thumb: #395067;
+    --scrollbar-thin-thumb: #395067;
+    --interactive-muted: #395067;
+    --text-muted: #395067;
 
-    --background-modifier-hover: color-mix(in srgb, #535961, transparent 70%);
-    --background-modifier-active: color-mix(in srgb, #535961, transparent 50%);
-    --background-modifier-accent: #535961;
-    --background-accent: #535961;
+    --background-modifier-hover: color-mix(in srgb, #395067, transparent 70%);
+    --background-modifier-active: color-mix(in srgb, #395067, transparent 50%);
+    --background-modifier-accent: #395067;
+    --background-accent: #395067;
 
-    --input-border: #535961;
-    --icon-secondary: #535961;
-    --icon-tertiary: #535961;
-    --channel-icon: #535961;
-    --channels-default: #535961;
-    --header-primary: #535961;
-    --__lottieIconColor: #535961;
-    --interactive-normal: #535961;
+    --input-border: #395067;
+    --icon-secondary: #395067;
+    --icon-tertiary: #395067;
+    --channel-icon: #395067;
+    --channels-default: #395067;
+    --header-primary: #395067;
+    --__lottieIconColor: #395067;
+    --interactive-normal: #395067;
 
     /* *.color3 */
-    --red-400: #556774;
-    --background-modifier-selected: #556774;
+    --red-400: #395E77;
+    --background-modifier-selected: #395E77;
 
-    --notice-background-positive: #556774;
-    --notice-text-positive: #556774;
+    --notice-background-positive: #395E77;
+    --notice-text-positive: #395E77;
 
     /* *.color4 */
-    --status-danger: #667587;
-    --button-outline-danger-border: #667587;
-    --button-outline-danger-text: #667587;
-    --button-danger-background: #667587;
+    --status-danger: #4F5A6C;
+    --button-outline-danger-border: #4F5A6C;
+    --button-outline-danger-text: #4F5A6C;
+    --button-danger-background: #4F5A6C;
 
-    --yellow-300: #667587;
+    --yellow-300: #4F5A6C;
 
     /* *.color5 */
-    --brand-experiment: #857680;
-    --brand-experiment-360: #857680;
-    --brand-experiment-500: #857680;
-    --profile-gradient-button-color: #857680;
+    --brand-experiment: #3B6686;
+    --brand-experiment-360: #3B6686;
+    --brand-experiment-500: #3B6686;
+    --profile-gradient-button-color: #3B6686;
 
-    --green-360: #857680;
+    --green-360: #3B6686;
 
     /* *.color7 */
-    --text-normal: #c2c4c6;
-    --interactive-active: #c2c4c6;
+    --text-normal: #c2c5c7;
+    --interactive-active: #c2c5c7;
 }
 
 /* status indicators */
 rect[fill="#d83a41"] {
-    fill: #556774 !important;
+    fill: #395E77 !important;
 }
 
 rect[fill="#cc954c"] {
-    fill: #667587 !important;
+    fill: #4F5A6C !important;
 }
 
 rect[fill="#40a258"] {
-    fill: #857680 !important;
+    fill: #3B6686 !important;
 }
 html, body, #app-mount {
-    background: #0d151e !important;
+    background: #0e1721 !important;
 }
 
 html, body, #app-mount {
@@ -132,8 +132,8 @@ html, body, #app-mount {
 [class*="separator"],
 hr,
 [class*="guildSeparator"] {
-    border-color: #535961 !important;
-    background: #535961 !important;
+    border-color: #395067 !important;
+    background: #395067 !important;
 }
 
 .sidebar,
@@ -273,7 +273,7 @@ div[class*="contentHeader"] {
 
 /* Control/Call buttons */
 .centerControls_bfe55a button {
-    border: 1px solid color-mix(in srgb, #535961, transparent 35%) !important;
+    border: 1px solid color-mix(in srgb, #395067, transparent 35%) !important;
     border-radius: 6px;
 }
 .buttonSection__1405b {
@@ -285,30 +285,30 @@ div[class*="contentHeader"] {
     background-image: none !important;
 }
 .trailing_c38106 .clickable__81391 {
-  color: #535961 !important;
+  color: #395067 !important;
 }
 
 /* Border between elements inside the server channels area */
 .containerDefault__29444,
 .containerDefault_c69b6d {
-    border-bottom: 1px solid color-mix(in srgb, #535961, transparent 44%) !important;
+    border-bottom: 1px solid color-mix(in srgb, #395067, transparent 44%) !important;
     border-top: none !important;
 }
 
 
 /* Edge control */
 .edgeControls_bfe55a .controlIcon_f1ceac {
-    color: #535961 !important;
-    border: 1px solid color-mix(in srgb, #535961, transparent 25%) !important;
+    color: #395067 !important;
+    border: 1px solid color-mix(in srgb, #395067, transparent 25%) !important;
     border-radius: 6px
 }
 .edgeControls_bfe55a .controlIcon_f1ceac:hover {
-    color: #535961 !important;
-    /* border: 2px solid color-mix(in srgb, #535961, transparent 35%) !important; */
+    color: #395067 !important;
+    /* border: 2px solid color-mix(in srgb, #395067, transparent 35%) !important; */
 }
 .edgeControls_bfe55a .controlIcon_f1ceac:hover svg {
-    fill: #535961 !important;
-    border: 2px solid color-mix(in srgb, #535961, transparent 45%) !important;
+    fill: #395067 !important;
+    border: 2px solid color-mix(in srgb, #395067, transparent 45%) !important;
     border-radius: 6px
 }
 

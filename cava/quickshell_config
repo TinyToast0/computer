@@ -1,0 +1,12 @@
+[general]
+bars = 60
+mono_option = average
+sensitivity = 15 
+autosens = 1
+gravity = 400
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_target = 100

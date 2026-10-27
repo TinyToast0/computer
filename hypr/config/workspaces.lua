@@ -36,7 +36,7 @@ for i = 1, 5 do
 	hl.workspace_rule({ workspace = i, monitor = "DP-1", default = true })
 end
 
-for i = 11, 15 do
+for i = 6, 10 do
 	hl.workspace_rule({ workspace = i, monitor = "DP-2", persistent = true })
 	hl.workspace_rule({ workspace = i, monitor = "DP-2", default = true })
 end

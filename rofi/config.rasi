@@ -1,7 +1,7 @@
 configuration {
-  kb-row-up: "Control+e";
-  kb-row-down: "Control+n,Tab";
-  kb-accept-entry: "control+i,Alt_L,Return";
+  kb-row-up: "Control+k";
+  kb-row-down: "Control+j,Tab";
+  kb-accept-entry: "control+l,Alt_L,Return";
   kb-element-next: "";
   kb-remove-to-eol: "";
   kb-mode-complete: "";
